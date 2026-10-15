@@ -15,7 +15,7 @@ enum ProductListState {
 }
 
 @Observable @MainActor
-class ProductListViewModel{
+final class ProductListViewModel {
     private var repository: ProductRepositoryProtocol
         
     var state: ProductListState = .idle
