@@ -2,7 +2,7 @@
 //  FakeStoreApp.swift
 //  FakeStore
 //
-//  Created by Sergio Andres Rodriguez Castillo on 14/10/26.
+//  Created by Sergio Rodriguez on 14/10/26.
 //
 
 import SwiftUI
