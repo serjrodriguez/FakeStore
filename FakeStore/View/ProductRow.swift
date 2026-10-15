@@ -18,7 +18,7 @@ struct ProductRow: View {
                 ProgressView()
             }
             .frame(width: 64, height: 64)
-            .backgroundStyle(.white)
+            .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
             VStack(alignment: .leading, spacing: 2) {
@@ -32,8 +32,13 @@ struct ProductRow: View {
                 Text(String(product.rating.rate))
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                Text(product.price, format: .currency(code: "USD"))
             }
+            
+            Spacer()
+            
+            Text(product.price, format: .currency(code: "USD"))
+                .font(.subheadline)
+                .fontWeight(.medium)
         }
     }
 }
